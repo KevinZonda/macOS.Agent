@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KevinZonda.MacOSAgent.MAUIApplication.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <Label
+                Text="KevinZonda macOS Agent"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+            
+            <Label
+                x:Name="CornerInfoLbl"
+                HorizontalOptions="Center"
+                />
+            <Button
+                x:Name="DisableCornerBtn"
+                Text="DisableCorner"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnDisableCornerClicked"
+                HorizontalOptions="Center" />
+            <Button
+                x:Name="RecoverCornerBtn"
+                Text="Recover HotCorner"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnRecoverCornerClicked"
+                HorizontalOptions="Center" />
+            <Button
+                x:Name="RefreshCornerBtn"
+                Text="Refresh HotCorner"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnRefreshCornerClicked"
+                HorizontalOptions="Center" />
+            
+            <Label
+                Text="University College Birmingham"
+                HorizontalOptions="Center" 
+            />
+        </VerticalStackLayout>
+    </ScrollView>
+    
+
+</ContentPage>
